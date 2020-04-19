@@ -1,13 +1,67 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: lavenderblush;
+}
+
+.navbar {
+  margin: 0 auto;
+  text-align: center;
+  background: purple;
+  width: 70%;
+  border-radius: 5px 5px 0 0;
+}
+
+.navbar li {
+  list-style: none;
+  font-size: 40px;
+  color: lavenderblush;
+  padding: 20px;
+}
+
+.bookList {
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+  background: lawngreen;
+  text-align: center;
+}
+
+.bookList ul li {
+  list-style: none;
+  border: saddlebrown 2px solid;
+  margin: 5px;
+  padding: 10px 0;
+}
+
+.bookForm {
+  margin: 0 auto;
+  background: rebeccapurple;
+  text-align: center;
+  width: 70%;
+  border-radius: 0 0 5px 5px;
+}
+
+.bookForm form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.bookForm form input {
+  height: 50px;
+  margin: 10px;
+}
+
+input[type='submit'] {
+  background: lawngreen;
+}
+
+input[type='text']::placeholder {
+  padding-left: 20px;
+  font-style: italic;
 }
